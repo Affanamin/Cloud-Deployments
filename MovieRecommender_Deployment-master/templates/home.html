@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <h1 style="color:rgb(0, 102, 255)">Welcome to Movie Recommendation System</h1>
+  <h3 style="color:rgb(0, 102, 255)">Enter any Hollywood movie you like to get recommendations till (2010).</h3>
+</div>
+
+  <form action="{{url_for('recommend')}}">
+    <input type="text" name="movie" class="form-control" placeholder="Enter Movie name here">
+    <br>
+    <input type="submit" class="btn btn-info" value="Predict Now">
+  </form>
+{% endblock %}
